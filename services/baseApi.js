@@ -1,7 +1,8 @@
+import KEYS from '@/config/keys';
 import axios from 'axios';
 
 const baseApi = axios.create({
-    baseURL: 'http://localhost:3001',
+    baseURL: KEYS.API_URL,
 });
 
 export default baseApi;
